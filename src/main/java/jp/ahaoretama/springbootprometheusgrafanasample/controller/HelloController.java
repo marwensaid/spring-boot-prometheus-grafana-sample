@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @GetMapping("/hello")
-    @PrometheusTimeMethod(name = "hello_controller_say_hello_duration_seconds", help = "Some helpful info here")
+    // TODO expose an endpoint like /hello
+    // TODO expose a prometheus metric here (metric for timeout)
     public String sayHello() {
         return "hello";
     }

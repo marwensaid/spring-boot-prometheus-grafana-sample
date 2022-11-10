@@ -1,5 +1,3 @@
-FROM maven:3.5.2-jdk-8-alpine
-ADD . /code
-WORKDIR /code
-RUN mvn clean package -DskipTests=true
-CMD mvn spring-boot:run
+# TODO use maven jdk image to build DF
+# TODO add your directory
+# TODO build your code and start your application
